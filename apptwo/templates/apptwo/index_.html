@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index AppTwo</title>
+
+  {% load static %}
+    <link rel="stylesheet" href="{% static stylesheet %}">
+</head>
+<body>
+
+{% for picture in pictures %}
+    {% with 'apptwo/'|add:picture.filename as filepath %}
+    <div class="picture">
+        <h2>{{ picture.name }}</h2>
+        <img src="{% static filepath %}" />
+    </div>
+    {% endwith %}
+{% endfor %}
+
+</body>
+</html>
