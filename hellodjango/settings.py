@@ -80,9 +80,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',  # Adjust this to match your database file location
-        'OPTIONS': {
-            'shell': r'C:\sqlite\sqlite3.exe',  # Replace with the full path to sqlite3.exe
-        },
+        #'OPTIONS': {
+        #    'shell': r'C:\sqlite\sqlite3.exe',  # Replace with the full path to sqlite3.exe
+        #},
     }
 }
 
